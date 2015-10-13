@@ -1,21 +1,21 @@
 module.exports = function(d) {
-  if (typeof d !== 'number') {
+  if (typeof d !== 'number' || isNaN(d)) {
     return -1;
   }
-  
+
   // keep within the range: 0 <= d < 360
   d = d % 360;
 
   if (11.25 <= d && d < 33.75) {
     return "NNE";
   } else if (33.75 <= d && d < 56.25) {
-    return "ENE";
+    return "NE";
   } else if (56.25 <= d && d < 78.75) {
-    return "E";
-  } else if (78.75 <= d && d < 101.25) {
-    return "ESE";
-  } else if (101.25 <= d && d < 123.75) {
     return "ENE";
+  } else if (78.75 <= d && d < 101.25) {
+    return "E";
+  } else if (101.25 <= d && d < 123.75) {
+    return "ESE";
   } else if (123.75 <= d && d < 146.25) {
     return "SE";
   } else if (146.25 <= d && d < 168.75) {
@@ -35,7 +35,7 @@ module.exports = function(d) {
   } else if (303.75 <= d && d < 326.25) {
     return "NW";
   } else if (326.25 <= d && d < 348.75) {
-    return "ENE";
+    return "NNW";
   } else {
     return "N";
   }

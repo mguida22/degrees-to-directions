@@ -1,10 +1,10 @@
 {
   "name": "degrees-to-direction",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Convert degrees into directions",
   "main": "lib.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": "mguida22/directions-to-degrees",
   "keywords": [
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/mguida22/directions-to-degrees/issues"
   },
-  "homepage": "https://github.com/mguida22/directions-to-degrees#readme"
+  "homepage": "https://github.com/mguida22/directions-to-degrees#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
 }
