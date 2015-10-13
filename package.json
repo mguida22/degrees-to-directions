@@ -1,0 +1,22 @@
+{
+  "name": "degrees-to-direction",
+  "version": "1.0.0",
+  "description": "Convert degrees into directions",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "mguida22/directions-to-degrees",
+  "keywords": [
+    "directions",
+    "degrees",
+    "convert",
+    "wind"
+  ],
+  "author": "Michael Guida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mguida22/directions-to-degrees/issues"
+  },
+  "homepage": "https://github.com/mguida22/directions-to-degrees#readme"
+}
